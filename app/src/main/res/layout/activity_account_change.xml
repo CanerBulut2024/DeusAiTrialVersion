@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#f3f3f3">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="146dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Mevcut Hesaplar"
+        android:textColor="#6200EE"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_switch_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Başka Hesapla Giriş Yap" />
+
+    <Button
+        android:id="@+id/btn_logout_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mevcut Hesaptan Çık" />
+</LinearLayout>

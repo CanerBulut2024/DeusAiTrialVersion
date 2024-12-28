@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#f3f3f3">
+
+    <!-- Başlık -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Uygulama İpuçları"
+        android:textSize="24sp"
+        android:textColor="#6200EE"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Uygulama Hakkında -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Uygulama Hakkında"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bu uygulama, kullanıcıların çeşitli özellikler ve araçlarla medya içeriklerini düzenlemelerine yardımcı olur. Fotoğraf ve metin düzenleme, filtreler ve daha fazlası sunulmaktadır."
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Uygulama Nasıl Kullanılır -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Uygulama Nasıl Kullanılır?"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Uygulama, fotoğraf düzenleme, metin ekleme ve filtreler uygulama gibi bir dizi araç sunar. Ana ekran üzerinden fotoğraf seçebilir, metin girebilir ve filtreler uygulayarak içeriklerinizi düzenleyebilirsiniz."
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Dinamik İpuçları -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Uygulama İpuçları"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Sık Sorulan Sorular -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sık Sorulan Sorular"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Uygulama nasıl çalışır?\n2. Filtreler nasıl eklenir?\n3. Fotoğraf nasıl kaydedilir?"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Çevrimdışı İpuçları -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Çevrimdışı İpuçları"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="İnternet erişimi olmadan da ipuçlarını görüntüleyebilirsiniz. İpuçları uygulamanın önbelleğinde saklanmaktadır."
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp" />
+</LinearLayout>

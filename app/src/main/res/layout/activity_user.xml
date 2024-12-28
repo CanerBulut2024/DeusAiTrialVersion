@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#f3f3f3">
+
+    <!-- Kullanıcı Bilgileri -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kullanıcı Bilgileri"
+        android:textSize="24sp"
+        android:textColor="#6200EE"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/tv_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ad: John Doe\nE-posta: johndoe@gmail.com"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Şifre Değiştirme Butonu -->
+    <Button
+        android:id="@+id/btn_change_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Şifreyi Değiştir"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Premium Plan -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Premium Plan"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/btn_premium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Premium Özelliklere Eriş"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Hakkımızda -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hakkımızda"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/btn_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hakkımızda Bilgisi"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Ayarlar -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ayarlar"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/btn_change_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dil Değiştir"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Çıkış Yap"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/btn_account_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hesap Değiştir"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/btn_enter_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kupon Gir"
+        android:layout_marginBottom="20dp" />
+</LinearLayout>

@@ -1,0 +1,62 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Kullanıcı adı -->
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kullanıcı adı"
+        android:inputType="text" />
+
+    <!-- Şifre -->
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        android:layout_marginTop="8dp" />
+
+    <!-- Şifremi unuttum -->
+    <TextView
+        android:id="@+id/tv_forgot_password"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="4dp"
+        android:text="Şifremi unuttum"
+        android:textColor="@color/primary"
+        android:textSize="14sp" />
+
+    <!-- Giriş yap butonu -->
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giriş Yap"
+        android:layout_marginTop="16dp" />
+
+    <!-- Google ile giriş (aktif değil) -->
+    <Button
+        android:id="@+id/btn_google_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Google ile Giriş (Yakında)"
+        android:layout_marginTop="8dp"
+        android:enabled="false" />
+
+    <!-- Kayıt ol -->
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kayıt Ol"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

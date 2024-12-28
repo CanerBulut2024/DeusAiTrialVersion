@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F9F9F9">
+
+    <!-- Fotoğraf ve Metin Alma -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <!-- Fotoğraf Butonu -->
+        <ImageButton
+            android:id="@+id/btn_photo_picker"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="Fotoğraf Seç"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/ic_launcher_background" />
+
+        <!-- Metin Girişi -->
+        <EditText
+            android:id="@+id/et_text_input"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:hint="Metin Girin"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- Filtreler Bölümü -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:id="@+id/filterContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!-- Dinamik olarak eklenen filtreler -->
+            <ImageButton
+                android:id="@+id/filter1"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/ic_launcher_foreground"
+                android:contentDescription="@string/free_filter"
+                android:layout_marginEnd="8dp" />
+            <ImageButton
+                android:id="@+id/filter2"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/ic_launcher_foreground"
+                android:contentDescription="@string/premium_filter"
+                android:layout_marginEnd="8dp"
+                android:enabled="false" /> <!-- Premium Filtre Kilitli -->
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Oluştur ve Premium Butonları -->
+    <Button
+        android:id="@+id/btn_generate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Oluştur"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btn_premium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Premium Üye Ol"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Alt Menü -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_user"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Kullanıcı" />
+
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ana Sayfa" />
+
+        <Button
+            android:id="@+id/btn_tips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="İpuçları" />
+    </LinearLayout>
+</LinearLayout>

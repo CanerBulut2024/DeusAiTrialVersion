@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Başlık -->
+    <TextView
+        android:id="@+id/tvPremiumTitle"
+        android:layout_width="match_parent"
+        android:layout_height="232dp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:text="Premium Planlar"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Aylık Plan Butonu -->
+    <Button
+        android:id="@+id/btnMonthlyPlan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aylık Plan - 9.99₺"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/primary_color"
+        android:textColor="@color/white" />
+
+    <!-- Yıllık Plan Butonu -->
+    <Button
+        android:id="@+id/btnYearlyPlan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yıllık Plan - 99.99₺"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/primary_color"
+        android:textColor="@color/white" />
+
+    <!-- Plan Detayları Butonu -->
+    <Button
+        android:id="@+id/btnPlanDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detayları Görüntüle"
+        android:backgroundTint="@color/secondary_color"
+        android:textColor="@color/white" />
+
+</LinearLayout>
